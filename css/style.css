@@ -1,0 +1,309 @@
+* {
+		padding: 0px;
+		margin: 0px;
+		/*border: 2px solid;*/
+		}
+body{
+  background: #F4EEC0;
+}
+		.menu-b{
+			position: fixed;
+			width: 8%;
+			height: 100%;
+			left: 0px;
+			/*border: 1px solid #eee;*/
+			background-color: #7E6752;
+			transition: all 0.3s ease 0s;
+			z-index: 2;
+		}
+		.menu-b:hover{
+			opacity:2.0;
+			transform:scale(1.1, 1.1);
+		}
+		.bar{
+			background-color: #F4EEC0;
+			width: 30px;
+			height: 2px;
+			border-radius: 5px;
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translateX(-50%)translateY(-50%);
+		}
+		.first{
+			position: absolute;
+			transition: all 0.5s ease 0s;
+		}
+		.second{
+			margin-top: 10px;
+			position: absolute;
+			transition: all 0.5s ease 0s;
+		}
+		.third{
+			margin-top: 20px;
+			position: absolute;
+			transition: all 0.5s ease-in-out;
+		}
+		.m-icon{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 50px;
+			height: 50px;
+			transform: translateX(-50%)translateY(-50%);
+			cursor: pointer;
+			border-radius:50%;
+			transition: 0.3s ease-in-out;
+			/*border: 1px solid #FFFFFF;*/
+			z-index:0;
+		}
+		.first2{
+		/*margin-top: 10px;*/
+		position: relative;
+		-webkit-transform-origin: 50% -50%;
+		-moz-transform-origin: 50% -50%;
+		-o-transform-origin: 50% -50%;
+		-ms-transform-origin: 50% -50%;
+		transform-origin: 50% -50%;
+		-webkit-transform: rotate(45deg);
+		-moz-transform: rotate(45deg);
+		-o-transform: rotate(45deg);
+		-ms-transform: rotate(45deg);
+		transform: rotate(45deg);
+		left: 12px;
+		transition: all 0.5s ease 0s;
+		}
+		.second2{
+		/*margin-top: 10px;*/
+		position: relative;
+		-webkit-transform-origin: 5% 0%;
+		-moz-transform-origin: 5% 0%;
+		-o-transform-origin: 5% 0%;
+		-ms-transform-origin: 5% 0%;
+		transform-origin: 5% 0%;
+		-webkit-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		transform: rotate(-45deg);
+		left: 12px;
+		top:22px;
+		transition: all 0.5s ease 0s;
+		}
+		.third2{
+			display:none;
+			transition: all 0.5s ease-in-out;
+		}
+		.m-icon2{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 50px;
+			height: 50px;
+			transform: translateX(-50%)translateY(-30%);
+			cursor: pointer;
+			border-radius:50%;
+			transition: 0.3s ease-in-out;
+			/*border: 1px solid #FFFFFF;*/
+			z-index:0;
+		}
+		#menu_trigger{
+		display: none;
+		z-index: 2;
+		}
+		.menu_triger{
+		transition: right 0.3s linear;
+		}
+		/*#menu_trigger:checked~ .m-icon {
+			background-color: #eee;
+		}*/
+		.right{
+		position: fixed;
+		width: 50%;
+		height: 100%;
+		right: 0px;
+		background: #F4EEC0;
+		}
+		.left2{
+			display: none;
+			/*width: 0px;
+    		height: 0px;*/
+    		-webkit-transition: width 4s, height 4s;
+    		transition: width 4s, height 4s;
+			transition: 0.3s ease-in-out;
+		}
+		.left{
+		position: fixed;
+		float: right;
+		left:8%;
+		width: 50%;
+		height: 100%;
+		background:#F4EEC0;
+    z-index:0;
+		}
+		.menu{
+		position: fixed;
+		float: right;
+		left:8%;
+		width: 50%;
+		height: 100%;
+		background:#F4EEC0;
+/*     transition-delay: 0.8s; */
+		z-index:1;
+    transition-duration: 2s;
+		}
+.menu2{
+  opacity:0;
+/*   display:none; */
+}
+		.cho{
+		position: relative;
+		top:15%;
+		left: 20px;
+		line-height: 50px;
+		list-style-type:none;
+		width:100%;
+    transition-duration: 2s;
+		}
+		.menu li{
+			margin-top: 15px;
+		}
+		.menu a{
+		text-decoration:none;
+		color: #323232;
+		font-size: 25px;
+		font-family: "Jura";
+		transition: 0.3s ease-in-out;
+		font-weight: bold;
+		}
+		.menu a:hover{
+			color:#61B292;
+		}
+		.menu a i{
+		margin-right: 30px;
+		}
+		.pic{
+		height: 90%;
+    padding-right:20%;
+    padding-left:20%;
+		margin-left: auto;
+    margin-right: auto;
+/* 		border: 2px solid #000; */
+		}
+		#img1{
+    position: absolute;
+    top:20%;
+		height: 100%;
+		margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+    transition-duration: 2s;
+/*     transform: translateX(-5%) */
+/*     border: 2px solid #000; */
+		}
+		.slogan1{
+		position: absolute;
+		left:20%;
+    top: 90%;
+		font-size: 50px;
+		font-family: "East Sea Dokdo";
+    opacity: 0;
+    transition-duration: 2s;
+		}
+		.slogan2{
+		position: absolute;
+		left: 60%;
+		top: 95%;
+		font-size: 50px;
+		font-family: "East Sea Dokdo";
+    opacity: 0;
+    transition-duration: 2s;
+    transition-delay: 0.8s;
+		}
+		.a1{
+		color: #E36161;
+		}
+		.a2{
+		color: #64A36F;
+		}
+		.title{
+ 		position: relative; 
+		top: 10%; 
+		left: 10%;
+		color: #323232;
+		font-family: Quicksand;
+		font-size: 60px;
+		/*font-weight: bold;*/
+		letter-spacing: 15px;
+		line-height: 150px;
+		}
+		.b0{
+      position:relative;
+/*       top:20px; */
+      left:-40px;
+			font-family: Bowlby One SC;
+			/*font-weight: bold;*/
+			font-size: 70px;
+			letter-spacing: 20px;
+      opacity: 0;
+      transition-duration: 2s;
+		}
+		.b1{
+		position: relative;
+		left: -40px;
+		font-size: 20px;
+		line-height: 30px;
+    opacity: 0;
+    transition-duration: 2s;
+    transition-delay: 0.5s;
+		}
+		.link{
+			position: absolute;
+			bottom: 5%;
+			left:10%;
+			letter-spacing: 15px;
+      opacity: 0;
+      transition-duration: 2s;
+      transition-delay: 0.5s;
+/*       border: 1px solid #000; */
+		}
+		.icon1{
+			height: 60px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+      z-index: 5;
+/*       border: 1px solid #000; */
+/*       display: none; */
+		}
+		.icon1:hover{
+			opacity:.8;
+			transform:scale(1.1, 1.1);
+		}
+		.icon2{
+			position: relative;
+			top:-3px;
+			height: 53px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+      z-index: 5;
+/*       border: 1px solid #000; */
+/*       display:none; */
+		}
+		.icon2:hover{
+			opacity:.8;
+			transform:scale(1.1, 1.1);
+		}
+		.icon3{
+			position: relative;
+			height: 80px;
+			top:20px;
+			cursor: pointer;
+			transition: all 0.3s ease 0s;
+      z-index: 5;
+/*       border: 1px solid #000; */
+/*       display:none; */
+		}
+		.icon3:hover{
+			opacity:.8;
+			transform:scale(1.1, 1.1);
+}
